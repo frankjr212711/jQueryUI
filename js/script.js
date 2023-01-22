@@ -1,5 +1,5 @@
 
-// $(function() {
+$(function() {
 
     // jQuery Selectors
 
@@ -201,7 +201,7 @@
         DRAGGABLE
         https://jqueryui.com/draggable
       ----------------------------------*/
-    $('.box').draggable();   
+    // $('.box').draggable();   
         //  $('#box1').draggable({ scroll: true });
         //  $('#box1').draggable({ scroll: true, revert: 'invalid' });
 
@@ -245,7 +245,14 @@
     $('#sortableToo').sortable({connectWith: '#sortable'});
 
 
+     /* -------------------------
+        ACCORDION
+        https://jqueryui.com/sortable
+        -------------------------- */
+    // $('#accordion').accordion();
+    // $('#accordion').accordion({collapsible: true });
+    $('#accordion').accordion({collapsible: true, heightStyle: 'content' });
 
 
-// })
+})
 
