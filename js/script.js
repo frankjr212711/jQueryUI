@@ -223,16 +223,26 @@
         https://jqueryui.com/droppable
       --------------------------*/
 
-    $('#droppable').droppable({
-        accept: '#box1',
-        drop: function() {
-        // $(this).find('span').html('drop it like its hot');
-        $(this).text('drop it like its hot');
-        }
-
-    })
+    // $('#droppable').droppable({
+    //     accept: '#box1',
+    //     drop: function() {
+    //     // $(this).find('span').html('drop it like its hot');
+    //     $(this).text('drop it like its hot');
+    //     }
+    // })
   
 
+
+    /* -------------------------
+        SORTABLE
+        https://jqueryui.com/sortable
+      --------------------------*/
+    // $('#sortable').sortable();
+    // $('#sortableToo').sortable();
+    // $('#sortable').sortable({connectWith: '#sortableToo'});
+    $('#sortable').sortable({connectWith: '#sortableToo', placeholder: 'placeholderBox'});
+
+    $('#sortableToo').sortable({connectWith: '#sortable'});
 
 
 
