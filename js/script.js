@@ -274,7 +274,5 @@ $(function() {
             // minDate: '1W - 3D',
             maxDate: '+1W + 5D'
         });
-
-
 })
 
