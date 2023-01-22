@@ -245,13 +245,36 @@ $(function() {
     $('#sortableToo').sortable({connectWith: '#sortable'});
 
 
+
      /* -------------------------
         ACCORDION
-        https://jqueryui.com/sortable
+        https://jqueryui.com/accordion
         -------------------------- */
     // $('#accordion').accordion();
     // $('#accordion').accordion({collapsible: true });
     $('#accordion').accordion({collapsible: true, heightStyle: 'content' });
+
+
+
+     /* -------------------------
+        DATAPICKER
+        https://jqueryui.com/datepicker
+        -------------------------- */
+
+        $('.date').datepicker({
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            showButtonPanel: true,
+            changeMonth: false,
+            changeYear: true,
+            numberOfMonths: 2,
+            // minDate: -1,
+            // minDate: '-1D',
+            // minDate: '-1W',
+            // minDate: '1W - 3D',
+            maxDate: '+1W + 5D'
+
+        });
 
 
 })
