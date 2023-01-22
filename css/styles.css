@@ -3,30 +3,16 @@ body {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     height: 400px;
     margin: 2rem auto;
     padding: 1rem;
     font-family: open sans;
     background: #fff;
     border: 2px solid #eee;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
-.box {
-    width: 150px;
-    height: 150px;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    line-height: 150px;
-    margin: .25rem;
-    text-align: center;
-    cursor: pointer;
-    float: left;
-}
 
-#box1 { background: #065fd4; }
-#box2 { background: #0a9f95; }
-#box3 { background: #c9169c; }
-#box4 { background: #292929; }
+

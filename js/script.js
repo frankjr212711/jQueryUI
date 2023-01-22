@@ -197,19 +197,40 @@
 
     // jQuery UI
 
-    /* -------------------------
+    /* ---------------------------------
         DRAGGABLE
+        https://jqueryui.com/draggable
+      ----------------------------------*/
+    $('.box').draggable();   
+        //  $('#box1').draggable({ scroll: true });
+        //  $('#box1').draggable({ scroll: true, revert: 'invalid' });
+
+        //  $('#box2').draggable({ scroll: true, revert: 'invalid' });
+        //  it will return to its position because its set to not accept
+
+        // $('#box2').draggable({ scroll: true, revert: 'valie' });
+        // it will stay
+
+
+    //  $('#box2').draggable({ axis: 'x' });
+    //  $('#box3').draggable({ axis: 'y' });
+    //  $('#box4').draggable({ containment: '.container' });
+
+
+
+    /* -------------------------
+        DROPPABLE
+        https://jqueryui.com/droppable
       --------------------------*/
-      $('.box').draggable();   
-         $('#box1').draggable({ scroll: true });
 
-         $('#box2').draggable({ axis: 'x' });
-         $('#box3').draggable({ axis: 'y' });
-         $('#box4').draggable({ containment: '.container' });
+    $('#droppable').droppable({
+        accept: '#box1',
+        drop: function() {
+        // $(this).find('span').html('drop it like its hot');
+        $(this).text('drop it like its hot');
+        }
 
-
-
-    
+    })
   
 
 
