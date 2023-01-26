@@ -21,20 +21,45 @@
 
     <!-- Main Start -->
     <div class="main">
+
+        <!-- Header Start -->
+        <header class="header">
+            <div class="container">
+                <div class="row flex-end">
+                    <button type="button" class="nav-toggler">
+                        <span></span>
+                    </button>
+                    <nav class="nav">
+                        <div class="nav-inner">
+                            <ul>
+                                <li><a href="#home" class="nav-item link-item">Home</a></li>
+                                <li><a href="#about" class="nav-item link-item">About</a></li>
+                                <li><a href="#portfolio" class="nav-item link-item">Porfolio</a></li>
+                                <li><a href="#contact" class="nav-item link-item">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+
+
+
          <!-- Home Section -->
-         <section class="home-section align-items-center hidden">
+         <section class="home-section align-items-center active" id="home">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="home-text">
                         <p>Hello, I'm</p>
                         <h1>Frank O. Yeboah</h1>
                         <h2>Frontend web developer</h2>
-                        <a href="#" class="btn">more about me</a>
-                        <a href="#" class="btn">portfolio</a>
+                        <a href="#about" class="btn link-item">more about me</a>
+                        <a href="#portfolio" class="btn link-item">portfolio</a>
                     </div>
                     <div class="home-img">
                         <div class="img-box">
-                            <img src="/css/zeynep-guler-u34Xwo3G0HE-unsplash.jpg" alt="">
+                            <img src="/imgs/zeynep-guler-u34Xwo3G0HE-unsplash.jpg" alt="">
                             <!-- <img src="/css/FRANK OSEI YEBOAH.jpg" alt=""> -->
                         </div>
                     </div>
@@ -43,14 +68,14 @@
          </section>
 
                 <!-- About Section -->
-            <section class="about-section section-padding hidden">
+            <section class="about-section section-padding" id="about">
                 <div class="section-title ">
                     <h2>About Me</h2>
                 </div>
                 <div class="row">
                     <div class="about-img">
                         <div class="img-box">
-                            <img src="/css/zeynep-guler-u34Xwo3G0HE-unsplash.jpg" alt="">
+                            <img src="/imgs/zeynep-guler-u34Xwo3G0HE-unsplash.jpg" alt="">
                         </div>
                     </div>
                     <div class="about-text">
@@ -112,15 +137,15 @@
                         </div>
                     </div> <!-- Experience End -->
 
-                    <a href="#" class="btn">Download CV</a>
-                    <a href="#" class="btn">contact me</a>
+                    <a href="#cv.pdf" target="_blank" class="btn link-item">Download CV</a>
+                    <a href="#contact" class="btn">contact me</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Portfolio Section Start -->
-        <section class="portfolio-section section-padding">
+        <section class="portfolio-section section-padding" id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -235,7 +260,7 @@
                         <div class="portfolio-item-thumbnail">
                             <img src="/imgs/job-savelsberg-HMxxty8XxvM-unsplash.jpg" alt="portfolio item thumbnail">
                         </div>
-                        <h3 class="portfolio-item-title">product landing page</h3>
+                        <h3 class="portfolio-item-title">Waste Management Company Static Website</h3>
                         <button type="button" class="btn view-project-btn">view project</button>
                         <div class="portfolio-item-details">
                             <div class="description">
@@ -255,6 +280,62 @@
             </div>
         </section>
         <!-- Portfolio Section End -->
+
+            <!-- Contact Section Start -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>Contact me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="contact-form">
+                    <form action="">
+                        <div class="row">
+                            <div class="input-group">
+                                <input type="text" placeholder="Name" class="input-control" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" placeholder="Email" class="input-control" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" placeholder="Subject" class="input-control" required>
+                            </div>
+                            <div class="input-group">
+                                <textarea placeholder="Message" class="input-control"></textarea>
+                            </div>
+                            <button type="Submit" class="btn">send message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <h3>Email</h3>
+                        <p>example@gmail.com</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>Phone</h3>
+                        <p>+233 000 0000 000</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>Follow me</h3>
+                        <div class="social-links">
+                            <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="" target="_blank"><i class="fab fa-behance"></i></a>
+                            <a href="" target="_blank"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section End -->
+
     </div> <!-- Main End-->
 
     <!-- Portfolio Item Details Popup Start -->
@@ -266,25 +347,15 @@
                     <div class="pp-thumbnail">
                         <img src="/imgs/khaled-ali-DxkbYY8uehU-unsplash.jpg" alt="portfolio item thumbnail">
                     </div>
-                    <h3>app landing page</h3>
+                    <h3></h3>
                 </div>
-                <div class="pp-body">
-                        <div class="description">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, assumenda sint! Ea quo nisi quaerat tempora, adipisci provident soluta eius quasi, ipsum quas optio? Quis rerum veritatis maxime quo illum.</p>
-                        </div>
-                        <div class="general-info">
-                            <ul>
-                                <li>Created- <span>4 Dec 2020</span></li>
-                                <li>technologies used - <span>html, Css</span></li>
-                                <li>Role - <span>Frontend</span></li>
-                                <li>Veiew Online - <span><a href="#" target=""_blank>www.domain.com</a></span></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="pp-body"></div>
             </div>
         </div>
     </div>
     <!-- Portfolio Item Details Popup End -->
+
+
 
 
 
